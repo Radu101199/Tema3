@@ -1,0 +1,7 @@
+<nz-card style="width: 300px" [nzTitle]="game.title" [nzExtra]="extraTemplate">
+  <img [src]="game.image" alt="" />
+  <p>{{ game.description }}</p>
+</nz-card>
+<ng-template #extraTemplate>
+  <button nz-button nzType="default" (click)="navigateToGamePage()">More</button>
+</ng-template>

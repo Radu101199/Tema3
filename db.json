@@ -1,0 +1,19 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Dwarf Fortress",
+      "description": "The deepest, most intricate simulation of a world that's ever been created."
+    },
+    {
+      "id": 2,
+      "title": "Counter-Strike: Global Offensive",
+      "description": "Expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago."
+    },
+    {
+      "id": 3,
+      "title": "God of War Ragnarök",
+      "description": "Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go."
+    }
+  ]
+}

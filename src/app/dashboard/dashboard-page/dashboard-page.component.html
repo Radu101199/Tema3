@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="form">
+    <input nz-input placeholder="Name" [(ngModel)]="gameName" />
+    <button (click)="filter()">Filter</button>
+    <div *ngFor="let item of filteredItems">
+      {{ item.title }}
+      </div>
+    <input nz-input placeholder="Description" [(ngModel)]="gameDescription" />
+    <button (click)="filter()">Filter</button>
+    <div *ngFor="let item of filteredItems">
+      {{ item.title }}
+      </div>
+      <button (click)="sort()">Sort</button>
+
+      <div *ngFor="let item of sortedItems">
+      {{ item.title }}
+      </div>
+    <button nz-button nzType="primary" (click)="addNewGame()">Add</button>
+  </div>
+  <div class="games">
+    <app-game-card
+      *ngFor="let game of gameList"
+      [game]="game"
+      (clickedMore)="navigateToGamePage(game)"
+    ></app-game-card>
+  </div>
+
+</div>

@@ -1,0 +1,6 @@
+<div class="form">
+  <input nz-input placeholder="Name" [(ngModel)]="gameName" />
+  <input nz-input placeholder="Description" [(ngModel)]="gameDescription" />
+  <button nz-button nzType="primary" (click)="editGame()">Save</button>
+  <button class="delete-btn" nz-button nzType="primary" nzDanger (click)="deleteGame()">Delete</button>
+</div>
